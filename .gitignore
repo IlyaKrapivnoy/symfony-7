@@ -1,25 +1,40 @@
-
-###> symfony/framework-bundle ###
+# Symfony-specific files and directories
+/.env
+/.env.dev
 /.env.local
-/.env.local.php
 /.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
+
+/.phpunit.result.cache
+/.idea
+/.vscode
 /vendor/
-###< symfony/framework-bundle ###
+/var/
+/public/bundles
 
-###> phpunit/phpunit ###
+# Symfony cache and log files
+/var/cache/
+/var/log/
+
+# Symfony debug and profiler directories
+/.symfony*/
+
+# Composer dependencies
+/composer.lock
+
+# IDE specific files
+.idea/
+/.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# phpunit/phpunit
 /phpunit.xml
 .phpunit.result.cache
-###< phpunit/phpunit ###
 
-###> symfony/phpunit-bridge ###
-.phpunit.result.cache
-/phpunit.xml
-###< symfony/phpunit-bridge ###
-
-###> symfony/asset-mapper ###
+# symfony/asset-mapper
 /public/assets/
 /assets/vendor/
-###< symfony/asset-mapper ###
+
