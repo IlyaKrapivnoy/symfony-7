@@ -1,14 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>New Product</h1>
 
-    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+<h1>New Product</h1>
 
-        {{ form_row(form.name) }}
-        {{ form_row(form.description) }}
-        {{ form_row(form.size) }}
-        {{ form_row(form.save, {'label': 'Save'}) }}
+{{ include('product/_form.html.twig') }}
 
-    {{ form_end(form) }}
 {% endblock %}
